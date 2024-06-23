@@ -1,0 +1,24 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-rating .rating-value {
+    margin-left: 8px;
+    color: #777;
+    font-size: 15px;
+  }
+  
+  .star-rating span {
+    color: #ff9900; 
+    font-size: 30px;
+  }
+  
+  .star-rating span.half-star::before {
+    content: '\2605';
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+  }
+  

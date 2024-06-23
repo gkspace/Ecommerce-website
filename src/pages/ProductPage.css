@@ -1,0 +1,85 @@
+/* Alert Box Styles */
+.alert {
+  position: fixed;
+  top: 50px; /* Adjust if you have a fixed navbar */
+  right: 10px; /* Add space from the left side */
+  width: 30%; /* Adjust to be 1/3 of the page width */
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  z-index: 1000; /* Ensure it appears above other content */
+  border-radius: 5px; /* Add border radius for better styling */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Hidden by default */
+}
+
+.alert.visible {
+  opacity: 1; /* Show alert when visible */
+}
+
+/* Product Page Styles */
+.product-page {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2em auto;
+}
+
+.product-page .product-image {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.product-page .product-image img {
+  max-width: 100%;
+  max-height: 400px; /* Restrict the height to 400px */
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-page .product-details {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.product-page .product-details h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.product-page .product-description {
+  margin-bottom: 1em;
+}
+
+.product-page .product-price {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #e74c3c;
+}
+
+.product-page .product-rating {
+  margin-bottom: 1em;
+}
+
+.product-page .add-to-cart-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.product-page .add-to-cart-button:hover {
+  background-color: #218838;
+}

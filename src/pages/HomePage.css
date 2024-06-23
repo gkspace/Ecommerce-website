@@ -1,0 +1,14 @@
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+  justify-content: flex-start; /* Align items to the start */
+  max-width: 1200px; /* Optional: limit the container width */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 30px;
+}
+
+.product-item {
+  flex: 1 1 calc(.33 - 20px); /* Adjust the percentage based on the number of items per row */
+  box-sizing: border-box;
+}
